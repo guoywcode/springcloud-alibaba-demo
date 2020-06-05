@@ -25,6 +25,8 @@
     <module>demo-dao</module>
     <module>demo-rest-order</module>
     <module>demo-rest-product</module>
+    <module>demo-nacosclient-order</module>
+    <module>demo-nacosclient-product</module>
   </modules>
 
   <dependencyManagement>
@@ -45,6 +47,18 @@
       <dependency>
         <groupId>com.guoyw.springcloud</groupId>
         <artifactId>demo-rest-product</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo-nacosclient-order</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo-nacosclient-product</artifactId>
         <version>${springcloud-alibab.demo.version}</version>
       </dependency>
 
