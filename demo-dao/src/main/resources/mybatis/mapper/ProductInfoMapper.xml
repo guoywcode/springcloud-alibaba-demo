@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.tuling.mapper.ProductInfoMapper" >
+<mapper namespace="com.guoyw.springcloud.mapper.ProductInfoMapper" >
 
-    <select id="selectProductInfoById" resultType="com.tuling.entity.ProductInfo" parameterType="string">
+    <select id="selectProductInfoById" resultType="com.guoyw.springcloud.entity.ProductInfo" parameterType="string">
       select * from product_info where product_no=#{productNo}
     </select>
 </mapper>
