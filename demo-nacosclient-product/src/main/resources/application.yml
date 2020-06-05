@@ -24,6 +24,11 @@ spring:
     nacos:
       discovery:
         server-addr: 47.102.192.148:8848
+        namespace: dev
+        group: demo
+        cluster-name: BJ
+        metadata:
+          version: v2
   application:
     name: nacosclient-product
 server:

@@ -41,7 +41,7 @@ public class OrderInfoController {
 
     // 从nacos server获取 product-info 的地址
     List<ServiceInstance> serviceInstances = discoveryClient.getInstances("nacosclient-product");
-    if (serviceInstances == null)
+    if (serviceInstances == null || serviceInstances.isEmpty())
       return "未找到nacosclient-product实例";
 
     // 获取第0个实例元素
