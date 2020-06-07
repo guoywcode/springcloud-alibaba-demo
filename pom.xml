@@ -27,6 +27,8 @@
     <module>demo-rest-product</module>
     <module>demo-nacosclient-order</module>
     <module>demo-nacosclient-product</module>
+    <module>demo02-customlb-order</module>
+    <module>demo02-customlb-product</module>
   </modules>
 
   <dependencyManagement>
@@ -62,13 +64,12 @@
         <version>${springcloud-alibab.demo.version}</version>
       </dependency>
 
-      <!--lombok-->
       <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>1.18.12</version>
-        <scope>provided</scope>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo02-customlb-product</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
       </dependency>
+
 
       <!--引入springcloud的版本-->
       <dependency>
@@ -90,6 +91,14 @@
   </dependencyManagement>
 
   <dependencies>
+    <!--lombok-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.12</version>
+      <scope>provided</scope>
+    </dependency>
+
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
