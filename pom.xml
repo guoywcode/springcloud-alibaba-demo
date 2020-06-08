@@ -29,6 +29,8 @@
     <module>demo-nacosclient-product</module>
     <module>demo02-customlb-order</module>
     <module>demo02-customlb-product</module>
+    <module>demo02-ribbon-order</module>
+    <module>demo02-ribbon-product</module>
   </modules>
 
   <dependencyManagement>
@@ -67,6 +69,18 @@
       <dependency>
         <groupId>com.guoyw.springcloud</groupId>
         <artifactId>demo02-customlb-product</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo02-ribbon-order</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo02-ribbon-product</artifactId>
         <version>${springcloud-alibab.demo.version}</version>
       </dependency>
 
