@@ -1,4 +1,3 @@
-
 spring:
   datasource:
     druid:
@@ -32,25 +31,7 @@ spring:
           version: v1 #元数据 灰度,可用于程序中写版本控制
 
   application:
-    name: ribbon-order
+    name: customcfg-order
 
 server:
-  port: 8005
-
-ribbon:
-  eager-load:
-    enabled: true
-    clients: ribbon-product
-  ReadTimeout: 1000
-  ConnectTimeout: 1000
-  MaxAutoRetries: 1
-  MaxAutoRetriesNextServer: 2
-  OkToRetryOnAllOperations: false
-  http:
-    client:
-      enabled: true
-
-
-ribbon-product:
-  ribbon:
-    NFLoadBalanceRuleClassName: com.netfix.loadbalancer.RoundRobinRule
+  port: 8001

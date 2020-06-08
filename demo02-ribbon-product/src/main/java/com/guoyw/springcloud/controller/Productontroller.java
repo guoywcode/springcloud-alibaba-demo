@@ -28,6 +28,7 @@ public class Productontroller {
     if(productInfo == null)
       return "未找到该商品";
 
+    System.out.println("我被调用了。。。。。 ");
     return productInfo;
   }
 }

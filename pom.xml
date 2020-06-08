@@ -31,6 +31,7 @@
     <module>demo02-customlb-product</module>
     <module>demo02-ribbon-order</module>
     <module>demo02-ribbon-product</module>
+    <module>demo02-customcfg-order</module>
   </modules>
 
   <dependencyManagement>
@@ -81,6 +82,12 @@
       <dependency>
         <groupId>com.guoyw.springcloud</groupId>
         <artifactId>demo02-ribbon-product</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo02-customcfg-order</artifactId>
         <version>${springcloud-alibab.demo.version}</version>
       </dependency>
 

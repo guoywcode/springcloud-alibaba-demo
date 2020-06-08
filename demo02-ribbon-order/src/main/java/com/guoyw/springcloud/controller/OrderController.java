@@ -26,7 +26,7 @@ public class OrderController {
   @Autowired
   private RestTemplate restTemplate;
 
-  @GetMapping("/slectOrderInfoByOrderNo/{orderNo}")
+  @GetMapping("/selectOrderInfoById/{orderNo}")
   public Object selectOrderInfoByOrderNo(@PathVariable("orderNo") String orderNo){
    OrderInfo orderInfo = orderInfoMapper.selectOrderInfoById(orderNo);
    if(orderInfo == null)
