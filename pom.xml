@@ -23,6 +23,7 @@
 
   <modules>
     <module>demo-dao</module>
+    <module>demo-config</module>
     <module>demo-rest-order</module>
     <module>demo-rest-product</module>
     <module>demo-nacosclient-order</module>
@@ -43,6 +44,12 @@
       <dependency>
         <groupId>com.guoyw.springcloud</groupId>
         <artifactId>demo-dao</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo-config</artifactId>
         <version>${springcloud-alibab.demo.version}</version>
       </dependency>
 
