@@ -25,8 +25,8 @@ spring:
       discovery:
         server-addr: 47.102.192.148:8848
         namespace: dev # 命名空间 环境隔离
-        group: demo    # 组别  不同业务隔离
-        cluster-name: SH #集群 不隔离，可在程序中自己实现优先调同一集群下的
+        #group: demo    # 组别  不同业务隔离
+        cluster-name: BJ #集群 不隔离，可在程序中自己实现优先调同一集群下的
         metadata:
           version: v1 #元数据 灰度,可用于程序中写版本控制
 
@@ -34,4 +34,4 @@ spring:
     name: customcfg-order
 
 server:
-  port: 8001
+  port: 8011
