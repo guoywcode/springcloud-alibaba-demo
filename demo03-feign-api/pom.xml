@@ -8,20 +8,16 @@
     <version>1.0.0</version>
   </parent>
   <groupId>com.guoyw.springcloud</groupId>
-  <artifactId>demo02-ribbon-order</artifactId>
+  <artifactId>demo03-feign-api</artifactId>
   <packaging>jar</packaging>
-  <name>demo02-ribbon-order</name>
+  <name>demo03-feign-api</name>
   <description>Demo project for Spring Boot</description>
+
 
   <dependencies>
     <dependency>
       <groupId>com.guoyw.springcloud</groupId>
       <artifactId>demo-dao</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>com.alibaba.cloud</groupId>
-      <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
     </dependency>
 
     <dependency>

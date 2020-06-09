@@ -8,9 +8,9 @@
     <version>1.0.0</version>
   </parent>
   <groupId>com.guoyw.springcloud</groupId>
-  <artifactId>demo02-ribbon-order</artifactId>
+  <artifactId>demo03-feign-order</artifactId>
   <packaging>jar</packaging>
-  <name>demo02-ribbon-order</name>
+  <name>demo03-feign-order</name>
   <description>Demo project for Spring Boot</description>
 
   <dependencies>
@@ -20,13 +20,13 @@
     </dependency>
 
     <dependency>
-      <groupId>com.alibaba.cloud</groupId>
-      <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
+      <groupId>com.guoyw.springcloud</groupId>
+      <artifactId>demo03-feign-api</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-openfeign</artifactId>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
     </dependency>
 
     <dependency>
@@ -56,7 +56,16 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>

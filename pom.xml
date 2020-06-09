@@ -32,6 +32,9 @@
     <module>demo02-ribbon-order</module>
     <module>demo02-ribbon-product</module>
     <module>demo02-customcfg-order</module>
+    <module>demo03-feign-api</module>
+    <module>demo03-feign-order</module>
+    <module>demo03-feign-product</module>
   </modules>
 
   <dependencyManagement>
@@ -88,6 +91,24 @@
       <dependency>
         <groupId>com.guoyw.springcloud</groupId>
         <artifactId>demo02-customcfg-order</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo03-feign-api</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo03-feign-order</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo03-feign-product</artifactId>
         <version>${springcloud-alibab.demo.version}</version>
       </dependency>
 
