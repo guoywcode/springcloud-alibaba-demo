@@ -36,6 +36,9 @@
     <module>demo03-feign-api</module>
     <module>demo03-feign-order</module>
     <module>demo03-feign-product</module>
+    <module>demo04-sentinel-helloworld</module>
+    <module>demo04-feignwithsentinel-order</module>
+    <module>demo04-feignwithsentinel-product</module>
   </modules>
 
   <dependencyManagement>
@@ -116,6 +119,40 @@
       <dependency>
         <groupId>com.guoyw.springcloud</groupId>
         <artifactId>demo03-feign-product</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo04-sentinel-helloworld</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo04-feignwithsentinel-order</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+
+      <dependency>
+      <groupId>com.guoyw.springcloud</groupId>
+      <artifactId>demo04-feignwithsentinel-product</artifactId>
+      <version>${springcloud-alibab.demo.version}</version>
+     </dependency>
+
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo08-gateway</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo08-gateway-product</artifactId>
+        <version>${springcloud-alibab.demo.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.guoyw.springcloud</groupId>
+        <artifactId>demo08-geteway-order</artifactId>
         <version>${springcloud-alibab.demo.version}</version>
       </dependency>
 
